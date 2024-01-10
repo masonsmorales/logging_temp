@@ -15,7 +15,6 @@ setup_logging()
 def get_logger(name):
     """Get a pre-configured logger."""
     return structlog.get_logger(name)
-Step 2: Adding Custom Field at Module Level
 ```
 
 module
