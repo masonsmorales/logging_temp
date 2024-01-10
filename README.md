@@ -15,7 +15,7 @@ setup_logging()
 
 module
 ```python
-from struct import get_logger
+from structlog import get_logger
 
 # Get a logger and bind a custom field
 logger = get_logger(__name__).bind(custom_field="custom_value")
