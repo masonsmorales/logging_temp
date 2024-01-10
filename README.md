@@ -11,15 +11,11 @@ def setup_logging():
 
 # Call this function at the start of your application.
 setup_logging()
-
-def get_logger(name):
-    """Get a pre-configured logger."""
-    return structlog.get_logger(name)
 ```
 
 module
 ```python
-from app_init import get_logger
+from struct import get_logger
 
 # Get a logger and bind a custom field
 logger = get_logger(__name__).bind(custom_field="custom_value")
